@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", serif;
+}
+
+.dark {
+    background-color: #1F1F1F;
+    color: #B4B4B4;
+}
+
+:focus {
+    outline: none;
+}
+
+.convert-container {
+    width: 90%;
+    padding: 20px 18px;
+    box-shadow: 0px 0px 8px 2px #b7b7b7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 9px;
+}
+
+.d-mode {
+    position: absolute;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 8px 2px #b7b7b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+}
+
+.dark .d-mode {
+    background-color: #262626;
+    color: white;
+}
+
+
+.dark .convert-container {
+    background-color: #262626;
+}
+
+@media (min-width:426px) {
+    .convert-container {
+        width: 60%;
+    }
+}
+
+@media (min-width:1025px) {
+    .convert-container {
+        width: 40%;
+    }
+}
+
+.convert-container>h1 {
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #374151;
+    text-align: center;
+}
+
+.dark .convert-container>h1 {
+    color: #B4B4B4;
+}
+
+@media (min-width:426px) {
+    .convert-container>h1 {
+        font-size: 30px;
+    }
+}
+
+.convert-container>.currency-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (min-width:426px) {
+    .convert-container>.currency-form {
+        flex-direction: row;
+    }
+}
+
+.convert-container>.currency-form .in {
+    width: 100%;
+}
+
+.convert-container>.currency-form .to {
+    margin-top: -25px;
+}
+
+@media (min-width:426px) {
+    .convert-container>.currency-form .to {
+        margin-top: 0;
+    }
+}
+
+
+.convert-container>.currency-form .in>span {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.dark .convert-container>.currency-form .in>span {
+    color: #B4B4B4;
+}
+
+.convert-container>.currency-form .in>select {
+    width: 100%;
+    margin-top: 10px;
+    border: 2px solid #efefef;
+    background-color: #d1d5db;
+    padding: 8px 14px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.dark .convert-container>.currency-form .in>select {
+    background-color: #343434;
+    border-color: #959595;
+    color: #959595;
+}
+
+.convert-container>.currency-form .in>datalist {}
+
+.convert-container>.currency-form .in>datalist>option {}
+
+.convert-container>.currency-form .from {}
+
+.convert-container>.currency-form .swap {
+    /* align-self: end; */
+}
+
+@media (min-width:426px) {
+    .convert-container>.currency-form .swap {
+        align-self: end;
+    }
+}
+
+.convert-container>.currency-form .swap button {
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #E5E7EB;
+}
+
+.dark .convert-container>.currency-form .swap button {
+    background-color: #343434;
+    color: #959595;
+}
+
+.convert-container>.currency-form .swap button:hover {
+    background-color: #c1c6cf;
+}
+
+.convert-container>.price {
+    margin: 25px 0;
+}
+
+.convert-container>.price span {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.dark .convert-container>.price span {
+    color: #B4B4B4;
+}
+
+
+.convert-container>.price input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 8px 10px;
+    border: 2px solid #e5e7eb;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+.dark .convert-container>.price input {
+    background-color: #343434;
+    border-color: #959595;
+    color: #959595;
+}
+
+.convert-container>.price .massege {
+    color: #8C0101 !important;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.convert-container>button:last-of-type {
+    padding: 10px 17px;
+    margin-left: auto;
+    display: block;
+    border: none;
+    background-color: #4F46E5;
+    color: #FFFFFF;
+    border-radius: 6px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.convert-container>button:last-of-type:hover {
+    background-color: #4a44c2;
+}
+
+.dark .convert-container>button:last-of-type {
+    background-color: #659CA3;
+    color: #262626;
+}
+
+.dark .convert-container>button:last-of-type:hover {
+    background-color: #52797e;
+}
